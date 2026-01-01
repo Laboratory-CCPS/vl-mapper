@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>vln_bringup</name>
+  <version>0.0.1</version>
+  <description>Bringup package of the workspace vln_ws</description>
+  <maintainer email="josua.lindemann@outlook.de">Josua Lindemann</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>tokenizer</exec_depend>
+  <exec_depend>yolo_onnx</exec_depend>
+  <exec_depend>yolo_world</exec_depend>
+  <exec_depend>vl_mapper</exec_depend>
+  <exec_depend>vl_mapper_interface</exec_depend>
+  <exec_depend>openai_detections</exec_depend>
+  <exec_depend>openai_vision</exec_depend>
+  <exec_depend>gui_instruction</exec_depend>
+  <exec_depend>voice_instruction</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,9 @@
+# Request
+builtin_interfaces/Time stamp
+vl_mapper_interface/Labels labels
+---
+# Response
+bool success
+string message
+
+vision_msgs/Detection2DArray detections

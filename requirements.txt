@@ -1,0 +1,25 @@
+# Core
+numpy<2.0
+Pillow
+opencv-python<4.11
+
+# ONNX
+onnx
+onnxruntime
+onnxslim
+onnxscript
+
+openai
+ultralytics
+openai-clip
+openai-whisper
+openwakeword
+pyaudio             # for voice instruction, Note: install beforehand `sudo apt-get update && sudo apt-get install portaudio19-dev`
+torch>=2.8.0 
+torchvision>=0.23.0 
+torchaudio>=2.8.0
+
+# Utilities
+tqdm
+requests
+python-toon

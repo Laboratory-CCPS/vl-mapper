@@ -1,0 +1,7 @@
+models
+install
+log
+build
+.venv
+**/c_generated_code/*
+**/__pycache__/*

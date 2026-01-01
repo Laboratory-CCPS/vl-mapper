@@ -1,0 +1,10 @@
+# Request
+vl_mapper_interface/Labels labels
+---
+# Response
+bool success
+string message
+
+# Flattened int64 tokens with shape [N * 77]
+int64[] token_ids
+int32 token_count

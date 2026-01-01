@@ -1,0 +1,8 @@
+build/
+install/
+log/
+.git/
+.gitignore/
+.vscode/
+__pycache__/
+*.pyc

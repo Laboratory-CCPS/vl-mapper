@@ -1,0 +1,9 @@
+# Goal
+sensor_msgs/Image rgb_image
+vl_mapper_interface/Labels labels
+---
+# Result
+vision_msgs/Detection2DArray detections
+---
+# Feedback
+float32 progress
