@@ -1,4 +1,4 @@
-# VLN Workspace
+# VL-Mapper Workspace
 
 This repository contains a ROS2 workspace for a Visual-Language Mapping (VLM) stack. It includes YOLO-based detection services (Ultralytics and ONNX options), a tokenizer service for CLIP text embeddings, a mapper node, and bringup launch files.
 
@@ -284,22 +284,30 @@ flowchart LR
 - Message documentation of the *Detections3DArray* is [here](https://docs.ros.org/en/kinetic/api/vision_msgs/html/msg/Detection3DArray.html)
 - For WSL the microphone needs to be passed from windows:  
 
-    1. Find the right *BUSID*:
-        ```bash
-        usbipd list
-        ```
+    - via **usbipd** (only works with a usb device):  
+
+        1. Find the right *BUSID*:
+            ```bash
+            usbipd list
+            ```
+        
+        2. Share your *BUSID*:
+            ```bash
+            usbipd bind --busid <BUSID>
+            ```
+
+        3. Attach your *BUSID* to WSL:
+            ```bash
+            usbipd attach --wsl --busid <BUSID>
+            ```
+
+        4. Check the Input device:
+            ```bash
+            python3 script/check_mic.py
+            ```
     
-    2. Share your *BUSID*:
+    - via **pulse audio**:
         ```bash
-        usbipd bind --busid <BUSID>
-        ```
-
-    3. Attach your *BUSID* to WSL:
-        ```bash
-        usbipd attach --wsl --busid <BUSID>
-        ```
-
-    4. Check the Input device:
-        ```bash
-        python3 script/check_mic.py
+        sudo apt update
+        sudo apt install pulseaudio pulseaudio-utils     
         ```
